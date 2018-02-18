@@ -4,8 +4,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required <<========== We can turn it on later 
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim " call vundle#begin() " " alternatively, pass a path where Vundle should install plugins
+" set the runtime path to include Vundle and initialize set rtp+=~/.vim/bundle/Vundle.vim " call vundle#begin() " " alternatively, pass a path where Vundle should install plugins
 set rtp+=/usr/local/opt/fzf
 call vundle#begin('~/.vim/vundle')
 
@@ -29,6 +28,9 @@ filetype plugin indent on    " required
 "==============================
 set nu
 set ic
+set ai
+set expandtab
+set tabstop=2
 syntax on
 set statusline=%F%m%r%h%w%=\ [%Y]\ [%04l,%04v]\ [%p%%]\ [%L]
 set laststatus=2
